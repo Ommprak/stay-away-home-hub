@@ -27,19 +27,19 @@ export const Header = () => {
   }
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}>
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-transparent backdrop-blur-[2px]" : "bg-transparent"}`}>
       <div className="container max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center group">
           <svg 
-            className="h-7 w-auto text-airbnb-red transition-transform group-hover:scale-110"
+            className="h-7 w-auto text-airbnb-red transition-transform group-hover:scale-110 drop-shadow-sm"
             viewBox="0 0 24 24" 
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M12 2L2 12h3v8h14v-8h3L12 2zM12 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
           </svg>
-          <span className="text-airbnb-red font-bold text-xl ml-2.5 transition-colors">
+          <span className="text-airbnb-red font-bold text-xl ml-2.5 transition-colors drop-shadow-sm">
             StayHub
           </span>
         </Link>
@@ -48,12 +48,12 @@ export const Header = () => {
         <div className="flex items-center max-w-md w-full relative mx-4">
           <input 
             type="text"
-            className="w-full h-11 pl-5 pr-12 rounded-full bg-background/5 backdrop-blur-sm border border-border/30 text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-airbnb-red/40 focus:ring-2 focus:ring-airbnb-red/20 transition-all shadow-sm"
+            className="w-full h-12 pl-6 pr-14 rounded-full bg-white/5 backdrop-blur-[2px] border border-white/10 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-airbnb-red/30 focus:ring-2 focus:ring-airbnb-red/10 transition-all shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
             placeholder="Search"
           />
           <Button 
             size="icon" 
-            className="absolute right-1 rounded-full border border-airbnb-red/80 bg-transparent hover:bg-airbnb-red/10 hover:border-airbnb-red h-9 w-9 shadow-sm transition-all"
+            className="absolute right-1.5 rounded-full border border-airbnb-red/70 bg-transparent hover:bg-airbnb-red/5 hover:border-airbnb-red h-9 w-9 shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-all"
           >
             <Search className="h-4 w-4 text-airbnb-red" />
             <span className="sr-only">Search</span>

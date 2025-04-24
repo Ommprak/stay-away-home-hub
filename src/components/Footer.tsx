@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold mb-4">Hosting</h3>
             <ul className="space-y-3">
@@ -49,7 +48,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold mb-4">Airbnb</h3>
             <ul className="space-y-3">
@@ -70,7 +69,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-bold mb-4">Community</h3>
             <ul className="space-y-3">
@@ -83,7 +82,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="text-sm text-gray-600">
@@ -98,8 +97,15 @@ export const Footer = () => {
               <Link to="#" className="hover:underline">Sitemap</Link>
             </div>
           </div>
-          
+
           <div className="flex items-center gap-4 mt-4 md:mt-0">
+            <div className="flex items-center border rounded-full p-2 shadow-sm hover:shadow-md transition-all">
+              <Button variant="ghost" className="rounded-full font-medium text-sm">Anywhere</Button>
+              <div className="h-5 border-r border-gray-300"></div>
+              <Button variant="ghost" className="rounded-full font-medium text-sm">Any week</Button>
+              <div className="h-5 border-r border-gray-300"></div>
+              <Button variant="ghost" className="rounded-full font-medium text-sm">Add guests</Button>
+            </div>
             <Button variant="ghost" className="text-sm flex items-center gap-2">
               <Globe className="h-4 w-4" />
               English (US)

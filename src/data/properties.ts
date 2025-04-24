@@ -194,5 +194,135 @@ export const properties: Property[] = [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
     ]
+  },
+  {
+    id: 61,
+    title: "Lakeside Retreat",
+    location: "Nainital, Uttarakhand",
+    distance: "Near Naini Lake",
+    date: "Dec 20-25",
+    price: 20100,
+    rating: 4.8,
+    images: [
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c"
+    ]
+  },
+  {
+    id: 62,
+    title: "Heritage Palace Stay",
+    location: "Jodhpur, Rajasthan",
+    distance: "2km from Mehrangarh Fort",
+    date: "Jan 5-10",
+    price: 20800,
+    rating: 4.9,
+    images: [
+      "https://images.unsplash.com/photo-1580137189272-c9379f8864fd",
+      "https://images.unsplash.com/photo-1582971805810-b24306e0afe7"
+    ]
+  },
+  {
+    id: 63,
+    title: "Coastal Paradise Villa",
+    location: "Kovalam, Kerala",
+    distance: "Beachfront",
+    date: "Jan 15-20",
+    price: 19900,
+    rating: 4.7,
+    images: [
+      "https://images.unsplash.com/photo-1582971805810-b24306e0afe7",
+      "https://images.unsplash.com/photo-1587974928442-77dc3868dc26"
+    ]
+  },
+  {
+    id: 64,
+    title: "Mountain Lodge",
+    location: "Shimla, Himachal Pradesh",
+    distance: "Mall Road View",
+    date: "Jan 8-13",
+    price: 20300,
+    rating: 4.8,
+    images: [
+      "https://images.unsplash.com/photo-1506974210756-8e1b8985d348",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d"
+    ]
+  },
+  {
+    id: 65,
+    title: "Vineyard Estate",
+    location: "Nashik, Maharashtra",
+    distance: "Sula Vineyards nearby",
+    date: "Dec 25-30",
+    price: 20500,
+    rating: 4.6,
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+    ]
+  },
+  {
+    id: 66,
+    title: "River View Cottage",
+    location: "Dibrugarh, Assam",
+    distance: "Brahmaputra Riverside",
+    date: "Jan 10-15",
+    price: 19800,
+    rating: 4.7,
+    images: [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c",
+      "https://images.unsplash.com/photo-1575517111478-7f6afd0973db"
+    ]
+  },
+  {
+    id: 67,
+    title: "Historic Mansion",
+    location: "Lucknow, Uttar Pradesh",
+    distance: "Near Bara Imambara",
+    date: "Jan 20-25",
+    price: 20200,
+    rating: 4.8,
+    images: [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1630699144867-37acec97df5a"
+    ]
+  },
+  {
+    id: 68,
+    title: "Temple View Suite",
+    location: "Madurai, Tamil Nadu",
+    distance: "Meenakshi Temple View",
+    date: "Jan 12-17",
+    price: 20400,
+    rating: 4.9,
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+    ]
+  },
+  {
+    id: 69,
+    title: "Desert Oasis Resort",
+    location: "Kutch, Gujarat",
+    distance: "White Desert View",
+    date: "Jan 5-10",
+    price: 20600,
+    rating: 4.7,
+    images: [
+      "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    ]
+  },
+  {
+    id: 70,
+    title: "Coffee Estate Stay",
+    location: "Coorg, Karnataka",
+    distance: "Coffee Plantation",
+    date: "Jan 15-20",
+    price: 20000,
+    rating: 4.8,
+    images: [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c",
+      "https://images.unsplash.com/photo-1575517111478-7f6afd0973db"
+    ]
   }
 ];

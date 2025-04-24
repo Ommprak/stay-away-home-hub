@@ -16,7 +16,7 @@ export const properties: Property[] = [
     location: "Berhampur, Odisha",
     distance: "50 miles away",
     date: "Nov 12-17",
-    price: 350,
+    price: 900,
     rating: 4.97,
     images: [
       "https://i.im.ge/2025/04/24/vqgKZr.Screenshot-2025-02-04-084752.png",  // New Malibu property image

@@ -63,9 +63,6 @@ export const Header = () => {
 
         {/* Profile and menu */}
         <div className="flex items-center gap-4">
-          <Button variant="ghost" className="rounded-full hidden md:flex">
-            <span className="font-medium text-sm">Become a Host</span>
-          </Button>
           <Button variant="ghost" size="icon" className="rounded-full hidden md:flex">
             <Globe className="h-5 w-5" />
           </Button>

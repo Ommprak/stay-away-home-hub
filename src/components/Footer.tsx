@@ -99,13 +99,6 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <div className="flex items-center border rounded-full p-2 shadow-sm hover:shadow-md transition-all">
-              <Button variant="ghost" className="rounded-full font-medium text-sm">Anywhere</Button>
-              <div className="h-5 border-r border-gray-300"></div>
-              <Button variant="ghost" className="rounded-full font-medium text-sm">Any week</Button>
-              <div className="h-5 border-r border-gray-300"></div>
-              <Button variant="ghost" className="rounded-full font-medium text-sm">Add guests</Button>
-            </div>
             <Button variant="ghost" className="text-sm flex items-center gap-2">
               <Globe className="h-4 w-4" />
               English (US)

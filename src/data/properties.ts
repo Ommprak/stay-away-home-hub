@@ -1,4 +1,3 @@
-
 export interface Property {
   id: number;
   title: string;
@@ -14,7 +13,7 @@ export const properties: Property[] = [
   {
     id: 1,
     title: "Stunning Beachfront Villa with Infinity Pool",
-    location: "Malibu, California",
+    location: "Berhampur, Odisha",
     distance: "50 miles away",
     date: "Nov 12-17",
     price: 350,

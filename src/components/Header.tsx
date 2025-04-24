@@ -1,8 +1,8 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Search, Globe, Menu, User } from "lucide-react";
+import { Search, Globe, Menu, User, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,6 +13,7 @@ import {
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   // Add scroll event listener to change header style on scroll
   if (typeof window !== "undefined") {
@@ -28,7 +29,7 @@ export const Header = () => {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-sm py-4" : "bg-transparent py-6"
+        isScrolled ? "bg-background shadow-sm py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between">
@@ -48,18 +49,16 @@ export const Header = () => {
         </Link>
 
         {/* Search bar */}
-        <div className="hidden md:flex items-center justify-center px-4 max-w-xl w-full">
-          <div className="flex items-center border rounded-full p-2 shadow-sm hover:shadow-md transition-all">
-            <Button variant="ghost" className="rounded-full font-medium text-sm">Anywhere</Button>
-            <div className="h-5 border-r border-gray-300"></div>
-            <Button variant="ghost" className="rounded-full font-medium text-sm">Any week</Button>
-            <div className="h-5 border-r border-gray-300"></div>
-            <Button variant="ghost" className="rounded-full font-medium text-sm">Add guests</Button>
-            <Button size="icon" className="rounded-full bg-airbnb-red text-white hover:bg-airbnb-red/90">
-              <Search className="h-4 w-4" />
-              <span className="sr-only">Search</span>
-            </Button>
-          </div>
+        <div className="flex items-center border rounded-full p-2 shadow-sm hover:shadow-md transition-all">
+          <Button variant="ghost" className="rounded-full font-medium text-sm">Anywhere</Button>
+          <div className="h-5 border-r border-gray-300"></div>
+          <Button variant="ghost" className="rounded-full font-medium text-sm">Any week</Button>
+          <div className="h-5 border-r border-gray-300"></div>
+          <Button variant="ghost" className="rounded-full font-medium text-sm">Add guests</Button>
+          <Button size="icon" className="rounded-full bg-airbnb-red text-white hover:bg-airbnb-red/90">
+            <Search className="h-4 w-4" />
+            <span className="sr-only">Search</span>
+          </Button>
         </div>
 
         {/* Profile and menu */}
@@ -69,6 +68,21 @@ export const Header = () => {
           </Button>
           <Button variant="ghost" size="icon" className="rounded-full hidden md:flex">
             <Globe className="h-5 w-5" />
+          </Button>
+          
+          {/* Theme Toggle */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
+            {theme === "dark" ? (
+              <Sun className="h-5 w-5" />
+            ) : (
+              <Moon className="h-5 w-5" />
+            )}
+            <span className="sr-only">Toggle theme</span>
           </Button>
           
           <DropdownMenu>

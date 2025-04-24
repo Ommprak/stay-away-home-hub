@@ -27,33 +27,33 @@ export const Header = () => {
   }
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm" : "bg-transparent"}`}>
-      <div className="container max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-sm shadow-sm" : "bg-transparent"}`}>
+      <div className="container max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center group">
           <svg 
-            className="h-8 w-auto text-airbnb-red"
+            className="h-7 w-auto text-airbnb-red transition-transform group-hover:scale-110"
             viewBox="0 0 24 24" 
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M12 2L2 12h3v8h14v-8h3L12 2zM12 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
           </svg>
-          <span className="text-airbnb-red font-bold text-xl ml-2">
+          <span className="text-airbnb-red font-bold text-xl ml-2.5 transition-colors">
             StayHub
           </span>
         </Link>
 
         {/* Search bar */}
-        <div className="flex items-center max-w-md w-full relative">
+        <div className="flex items-center max-w-md w-full relative mx-4">
           <input 
             type="text"
-            className="w-full h-12 pl-4 pr-12 rounded-full bg-background/5 border border-border/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-airbnb-red/50 transition-all"
+            className="w-full h-11 pl-5 pr-12 rounded-full bg-background/5 backdrop-blur-sm border border-border/30 text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-airbnb-red/40 focus:ring-2 focus:ring-airbnb-red/20 transition-all shadow-sm"
             placeholder="Search"
           />
           <Button 
             size="icon" 
-            className="absolute right-1 rounded-full border border-airbnb-red bg-transparent hover:bg-airbnb-red/10 h-10 w-10"
+            className="absolute right-1 rounded-full border border-airbnb-red/80 bg-transparent hover:bg-airbnb-red/10 hover:border-airbnb-red h-9 w-9 shadow-sm transition-all"
           >
             <Search className="h-4 w-4 text-airbnb-red" />
             <span className="sr-only">Search</span>
@@ -61,28 +61,35 @@ export const Header = () => {
         </div>
 
         {/* Right side icons */}
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="rounded-full">
-            <Globe className="h-5 w-5" />
+        <div className="flex items-center gap-3">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="rounded-full hover:bg-background/10 transition-colors"
+          >
+            <Globe className="h-[18px] w-[18px]" />
           </Button>
           
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full"
+            className="rounded-full hover:bg-background/10 transition-colors"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {theme === "dark" ? (
-              <Sun className="h-5 w-5" />
+              <Sun className="h-[18px] w-[18px]" />
             ) : (
-              <Moon className="h-5 w-5" />
+              <Moon className="h-[18px] w-[18px]" />
             )}
           </Button>
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="rounded-full flex items-center gap-2 p-2">
-                <User className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                className="rounded-full hover:bg-background/10 transition-colors p-2"
+              >
+                <User className="h-[18px] w-[18px]" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56 mt-2">

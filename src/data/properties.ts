@@ -20,7 +20,7 @@ export const properties: Property[] = [
     price: 350,
     rating: 4.97,
     images: [
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",  // Ocean wave
+      "https://i.im.ge/2025/04/24/vqgKZr.Screenshot-2025-02-04-084752.png",  // New Malibu property image
       "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb",  // River between mountains
       "https://images.unsplash.com/photo-1721322800607-8c38375eef04",  // Living room
     ],

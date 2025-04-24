@@ -49,13 +49,16 @@ export const Header = () => {
         </Link>
 
         {/* Search bar */}
-        <div className="flex items-center border rounded-full p-2 shadow-sm hover:shadow-md transition-all">
-          <Button variant="ghost" className="rounded-full font-medium text-sm">Anywhere</Button>
-          <div className="h-5 border-r border-gray-300"></div>
-          <Button variant="ghost" className="rounded-full font-medium text-sm">Any week</Button>
-          <div className="h-5 border-r border-gray-300"></div>
-          <Button variant="ghost" className="rounded-full font-medium text-sm">Add guests</Button>
-          <Button size="icon" className="rounded-full bg-airbnb-red text-white hover:bg-airbnb-red/90">
+        <div className="flex items-center max-w-md w-full relative">
+          <input 
+            type="text"
+            className="w-full h-12 pl-4 pr-12 rounded-full border border-zinc-700 bg-zinc-900 text-white focus:outline-none focus:border-zinc-600 transition-all"
+            placeholder="Search"
+          />
+          <Button 
+            size="icon" 
+            className="absolute right-1 rounded-full bg-airbnb-red text-white hover:bg-airbnb-red/90 h-10 w-10"
+          >
             <Search className="h-4 w-4" />
             <span className="sr-only">Search</span>
           </Button>

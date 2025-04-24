@@ -1,4 +1,3 @@
-
 export interface Property {
   id: number;
   title: string;
@@ -20,9 +19,9 @@ export const properties: Property[] = [
     price: 350,
     rating: 4.97,
     images: [
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475",
     ],
   },
   {
@@ -34,8 +33,8 @@ export const properties: Property[] = [
     price: 195,
     rating: 4.89,
     images: [
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     ],
   },
   {
@@ -47,7 +46,7 @@ export const properties: Property[] = [
     price: 120,
     rating: 4.95,
     images: [
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
     ],
   },
   {
@@ -59,8 +58,8 @@ export const properties: Property[] = [
     price: 450,
     rating: 4.85,
     images: [
-      "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     ],
   },
   {
@@ -72,8 +71,8 @@ export const properties: Property[] = [
     price: 280,
     rating: 4.92,
     images: [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
     ],
   },
   {
@@ -85,9 +84,9 @@ export const properties: Property[] = [
     price: 210,
     rating: 4.96,
     images: [
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      "https://images.unsplash.com/photo-1500673922987-e212871fec22",
+      "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
     ],
   },
   {
@@ -99,8 +98,8 @@ export const properties: Property[] = [
     price: 175,
     rating: 4.91,
     images: [
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
     ],
   },
   {
@@ -112,8 +111,8 @@ export const properties: Property[] = [
     price: 320,
     rating: 4.94,
     images: [
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
+      "https://images.unsplash.com/photo-1472396961693-142e6e269027",
     ],
   },
 ];

@@ -26,6 +26,14 @@ export const Header = () => {
     });
   }
 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResult, setSearchResult] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSearchResult(searchQuery);
+  };
+
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-transparent backdrop-blur-[2px]" : "bg-transparent"}`}>
       <div className="container max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -45,20 +53,30 @@ export const Header = () => {
         </Link>
 
         {/* Search bar */}
-        <div className="flex items-center max-w-md w-full relative mx-4">
-          <input 
-            type="text"
-            className="w-full h-12 pl-6 pr-14 rounded-full bg-white/5 backdrop-blur-[2px] border border-white/10 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-airbnb-red/30 focus:ring-2 focus:ring-airbnb-red/10 transition-all shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
-            placeholder="Search"
-          />
-          <Button 
-            size="icon" 
-            className="absolute right-1.5 rounded-full border border-airbnb-red/70 bg-transparent hover:bg-airbnb-red/5 hover:border-airbnb-red h-9 w-9 shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-all"
-          >
-            <Search className="h-4 w-4 text-airbnb-red" />
-            <span className="sr-only">Search</span>
-          </Button>
-        </div>
+        <form onSubmit={handleSearch} className="flex flex-col items-center max-w-md w-full relative mx-4">
+          <div className="flex w-full relative">
+            <input 
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full h-12 pl-6 pr-14 rounded-full bg-white/5 backdrop-blur-[2px] border border-white/10 text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-airbnb-red/30 focus:ring-2 focus:ring-airbnb-red/10 transition-all shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
+              placeholder="Search"
+            />
+            <Button 
+              type="submit"
+              size="icon" 
+              className="absolute right-1.5 rounded-full border border-airbnb-red/70 bg-transparent hover:bg-airbnb-red/5 hover:border-airbnb-red h-9 w-9 shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-all"
+            >
+              <Search className="h-4 w-4 text-airbnb-red" />
+              <span className="sr-only">Search</span>
+            </Button>
+          </div>
+          {searchResult && (
+            <div className="absolute top-14 text-sm text-muted-foreground/80 animate-fade-in">
+              Searching for: {searchResult}
+            </div>
+          )}
+        </form>
 
         {/* Right side icons */}
         <div className="flex items-center gap-3">

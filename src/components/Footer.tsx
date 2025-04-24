@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { properties } from "@/data/properties";
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetDescription,
+//   SheetHeader,
+//   SheetTitle,
+//   SheetTrigger,
+// } from "@/components/ui/sheet";
+// import { properties } from "@/data/properties";
 
 export const Footer = () => {
   return (
@@ -115,42 +115,9 @@ export const Footer = () => {
             <Button variant="ghost" className="text-sm">
               $ USD
             </Button>
-            <Button variant="ghost" className="text-sm" onClick={() => document.getElementById('properties-sheet')?.click()}>
-              Properties List
-            </Button>
+            {/* Removed Properties List Button */}
           </div>
         </div>
-        
-        {/* Properties Sheet */}
-        <Sheet>
-          <SheetTrigger id="properties-sheet" />
-          <SheetContent side="right" className="w-[400px] sm:w-[540px] overflow-y-auto">
-            <SheetHeader>
-              <SheetTitle>All Properties</SheetTitle>
-              <SheetDescription>Complete list of available properties</SheetDescription>
-            </SheetHeader>
-            <div className="mt-6 space-y-4">
-              {properties.map((property) => (
-                <Link 
-                  key={property.id} 
-                  to={`/property/${property.id}`} 
-                  className="flex items-start space-x-4 p-4 hover:bg-gray-100 rounded-lg"
-                >
-                  <img 
-                    src={property.images[0]} 
-                    alt={property.title} 
-                    className="w-20 h-20 object-cover rounded-lg"
-                  />
-                  <div>
-                    <h3 className="font-medium">{property.title}</h3>
-                    <p className="text-sm text-gray-600">{property.location}</p>
-                    <p className="text-sm font-semibold mt-1">${property.price} / night</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
       </div>
     </footer>
   );

@@ -98,7 +98,19 @@
 
 @layer components {
   .hover-scale {
-    @apply transition-transform duration-200 hover:scale-[1.02];
+    @apply transition-transform duration-200;
+  }
+  
+  @media (hover: hover) {
+    .hover-scale {
+      @apply hover:scale-[1.02];
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hover-scale {
+      @apply active:scale-[1.01];
+    }
   }
   
   .animate-fade-in {

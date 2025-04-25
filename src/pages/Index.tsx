@@ -13,10 +13,10 @@ export default function Index() {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="container max-w-7xl mx-auto px-4 py-4 flex-grow">
+      <main className="container max-w-7xl mx-auto px-2 sm:px-4 py-2 sm:py-4 flex-grow">
         <CategoryFilter />
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 mt-4 sm:mt-8">
           {properties.map((property) => (
             <PropertyCard key={property.id} {...property} />
           ))}

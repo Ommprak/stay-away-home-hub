@@ -7,21 +7,28 @@ export const Footer = () => {
       <div className="container max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold mb-4">Company</h3>
+            <h3 className="font-bold mb-4">Pages</h3>
             <ul className="space-y-3">
+              <li>
+                <Link to="/" className="text-sm text-gray-600 hover:underline">Home</Link>
+              </li>
               <li>
                 <Link to="/about" className="text-sm text-gray-600 hover:underline">About Us</Link>
               </li>
               <li>
-                <Link to="/careers" className="text-sm text-gray-600 hover:underline">Careers</Link>
+                <Link to="/products" className="text-sm text-gray-600 hover:underline">Products</Link>
               </li>
               <li>
-                <Link to="/press" className="text-sm text-gray-600 hover:underline">Press</Link>
+                <Link to="/offers" className="text-sm text-gray-600 hover:underline">Offers</Link>
+              </li>
+              <li>
+                <Link to="/testimonials" className="text-sm text-gray-600 hover:underline">Testimonials</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-sm text-gray-600 hover:underline">Contact</Link>
               </li>
             </ul>
           </div>
-
-          
 
           <div>
             <h3 className="font-bold mb-4">Legal</h3>

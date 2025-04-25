@@ -64,7 +64,7 @@ export const Header = () => {
                 🔍 You searched for: "{searchResult}"
               </div>
             )}
-          </form>
+          </form>rm>
 
           {/* Right side icons */}
           <div className="flex items-center gap-3">

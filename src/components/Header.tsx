@@ -80,12 +80,7 @@ export const Header = () => {
                     <span>Contact</span>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/support" className="flex items-center">
-                    <HelpCircle className="mr-2 h-4 w-4" />
-                    <span>Support</span>
-                  </Link>
-                </DropdownMenuItem>
+                
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>

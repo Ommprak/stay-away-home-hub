@@ -1,15 +1,5 @@
 import { Link } from "react-router-dom";
-import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import {
-//   Sheet,
-//   SheetContent,
-//   SheetDescription,
-//   SheetHeader,
-//   SheetTitle,
-//   SheetTrigger,
-// } from "@/components/ui/sheet";
-// import { properties } from "@/data/properties";
 
 export const Footer = () => {
   return (
@@ -17,76 +7,61 @@ export const Footer = () => {
       <div className="container max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
+            <h3 className="font-bold mb-4">Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/about" className="text-sm text-gray-600 hover:underline">About Us</Link>
+              </li>
+              <li>
+                <Link to="/careers" className="text-sm text-gray-600 hover:underline">Careers</Link>
+              </li>
+              <li>
+                <Link to="/press" className="text-sm text-gray-600 hover:underline">Press</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="font-bold mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Help Center</Link>
+                <Link to="/help" className="text-sm text-gray-600 hover:underline">Help Center</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">AirCover</Link>
+                <Link to="/faq" className="text-sm text-gray-600 hover:underline">FAQ</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Anti-discrimination</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Disability support</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Cancellation options</Link>
+                <Link to="/contact" className="text-sm text-gray-600 hover:underline">Contact Us</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Hosting</h3>
+            <h3 className="font-bold mb-4">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Airbnb your home</Link>
+                <Link to="/privacy" className="text-sm text-gray-600 hover:underline">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">AirCover for Hosts</Link>
+                <Link to="/terms" className="text-sm text-gray-600 hover:underline">Terms of Service</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Hosting resources</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Community forum</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Hosting responsibly</Link>
+                <Link to="/cookies" className="text-sm text-gray-600 hover:underline">Cookie Policy</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Airbnb</h3>
+            <h3 className="font-bold mb-4">Connect</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Newsroom</Link>
+                <Link to="/blog" className="text-sm text-gray-600 hover:underline">Blog</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">New features</Link>
+                <Link to="/newsletter" className="text-sm text-gray-600 hover:underline">Newsletter</Link>
               </li>
               <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Careers</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Investors</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Gift cards</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-4">Community</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Disaster relief</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-sm text-gray-600 hover:underline">Combating discrimination</Link>
+                <Link to="/social" className="text-sm text-gray-600 hover:underline">Social Media</Link>
               </li>
             </ul>
           </div>
@@ -95,27 +70,17 @@ export const Footer = () => {
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="text-sm text-gray-600">
-              © 2025 Airbnb Clone, Inc.
-            </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <span>·</span>
-              <Link to="#" className="hover:underline">Privacy</Link>
-              <span>·</span>
-              <Link to="#" className="hover:underline">Terms</Link>
-              <span>·</span>
-              <Link to="#" className="hover:underline">Sitemap</Link>
+              © {new Date().getFullYear()} Your Company Name. All rights reserved.
             </div>
           </div>
 
           <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <Button variant="ghost" className="text-sm flex items-center gap-2">
-              <Globe className="h-4 w-4" />
-              English (US)
+            <Button variant="ghost" className="text-sm">
+              English
             </Button>
             <Button variant="ghost" className="text-sm">
-              $ USD
+              USD
             </Button>
-            {/* Removed Properties List Button */}
           </div>
         </div>
       </div>

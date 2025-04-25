@@ -37,7 +37,7 @@ export const Footer = () => {
                 <Link to="/support#crisis" className="text-sm text-gray-600 hover:underline">Crisis Support</Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-gray-600 hover:underline">Contact Us</Link>
+                <Link to="/about" className="text-sm text-gray-600 hover:underline">Contact Us</Link>
               </li>
             </ul>
           </div>

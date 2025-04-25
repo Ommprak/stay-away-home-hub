@@ -105,6 +105,14 @@
   .hover-scale {
     @apply transition-transform duration-200;
   }
+
+  header {
+    @apply transition-opacity duration-300;
+  }
+
+  header:hover {
+    @apply opacity-100;
+  }
   
   @media (hover: hover) {
     .hover-scale {

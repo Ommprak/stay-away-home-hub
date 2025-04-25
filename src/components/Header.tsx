@@ -1,8 +1,14 @@
 
 import { Link } from "react-router-dom";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, MoreVertical, Home, Store, MessageSquare, Phone, HelpCircle } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -42,9 +48,46 @@ export const Header = () => {
             <Link to="/testimonials" className="text-foreground/90 hover:text-foreground transition-colors">
               Testimonials
             </Link>
-            <Link to="/contact" className="text-foreground/90 hover:text-foreground transition-colors">
-              Contact Us
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <MoreVertical className="h-5 w-5" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem asChild>
+                  <Link to="/" className="flex items-center">
+                    <Home className="mr-2 h-4 w-4" />
+                    <span>Home</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/products" className="flex items-center">
+                    <Store className="mr-2 h-4 w-4" />
+                    <span>Products</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/testimonials" className="flex items-center">
+                    <MessageSquare className="mr-2 h-4 w-4" />
+                    <span>Testimonials</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/contact" className="flex items-center">
+                    <Phone className="mr-2 h-4 w-4" />
+                    <span>Contact</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/support" className="flex items-center">
+                    <HelpCircle className="mr-2 h-4 w-4" />
+                    <span>Support</span>
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 export const Footer = () => {
   return (
     <footer className="border-t border-gray-200 mt-10">
-      <div className="container max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container max-w-7xl mx-auto px-4 py-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center">
           <div>
             <h3 className="font-bold mb-4">Company</h3>
             <ul className="space-y-3">

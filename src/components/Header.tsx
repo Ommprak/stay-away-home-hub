@@ -31,17 +31,11 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <svg 
-              className="h-7 w-auto text-airbnb-red transition-transform group-hover:scale-110 drop-shadow-sm"
-              viewBox="0 0 24 24" 
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 2L2 12h3v8h14v-8h3L12 2zM12 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
-            </svg>
-            <span className="text-airbnb-red font-bold text-xl ml-2.5 transition-colors drop-shadow-sm">
-              StayHub
-            </span>
+            <img 
+              src="/logo.png"
+              alt="My Health Restart"
+              className="h-12 transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Search Form */}

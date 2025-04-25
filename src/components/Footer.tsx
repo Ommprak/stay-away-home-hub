@@ -25,10 +25,16 @@ export const Footer = () => {
             <h3 className="font-bold mb-4">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/help" className="text-sm text-gray-600 hover:underline">Help Center</Link>
+                <Link to="/support" className="text-sm text-gray-600 hover:underline">Support Hub</Link>
               </li>
               <li>
-                <Link to="/faq" className="text-sm text-gray-600 hover:underline">FAQ</Link>
+                <Link to="/support#coverage" className="text-sm text-gray-600 hover:underline">Coverage Plans</Link>
+              </li>
+              <li>
+                <Link to="/support#community" className="text-sm text-gray-600 hover:underline">Community Forum</Link>
+              </li>
+              <li>
+                <Link to="/support#crisis" className="text-sm text-gray-600 hover:underline">Crisis Support</Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm text-gray-600 hover:underline">Contact Us</Link>

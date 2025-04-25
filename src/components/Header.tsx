@@ -34,7 +34,7 @@ export const Header = () => {
             <img 
               src="/logo.png"
               alt="My Health Restart"
-              className="h-16 transition-transform group-hover:scale-105"
+              className="h-16 transition-transform group-hover:scale-105 dark:invert dark:brightness-0 dark:saturate-0"
             />
           </Link>
 
